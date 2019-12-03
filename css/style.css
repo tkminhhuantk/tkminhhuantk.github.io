@@ -599,16 +599,21 @@ body {
   padding-bottom: 1em;
   background-color: #e6e9ed;
 }
+.info-large{
+  margin-bottom: 20px;
+}
 .post-image-large{
   padding: 30px 30px;
   background-color: white;
   margin-bottom: 20px;
 }
 .post-info-large{
-  padding: 20px 20px;
+  padding:20px 20px;
+  height: 100%;
   background-color: white;
-  margin-bottom: 20px;
-  height: auto;
+}
+.post-info-large > .title-post > a > h3{
+  font-size: 24px;
 }
 .post_item{
   margin:0px 0px !important;
