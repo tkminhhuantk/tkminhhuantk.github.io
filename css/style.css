@@ -599,6 +599,17 @@ body {
   padding-bottom: 1em;
   background-color: #e6e9ed;
 }
+.post-image-large{
+  padding: 30px 30px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.post-info-large{
+  padding: 20px 20px;
+  background-color: white;
+  margin-bottom: 20px;
+  height: auto;
+}
 .post_item{
   margin:0px 0px !important;
   padding:20px 20px !important;
