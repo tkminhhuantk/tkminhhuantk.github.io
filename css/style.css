@@ -439,8 +439,7 @@ body {
 }
 .new-title > h3 {
   position: relative;
-  font-family: 'RobotoCondensed';
-  font-weight: bold;
+  font-weight: 900;
   margin: 0;
   text-transform: uppercase;
   color: #47a7eb;
@@ -628,10 +627,17 @@ body {
 }
 .title-post > a{
   color: #333 ;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 20px;
-  font-family: 'RobotoCondensed';
+  font-weight: bold;
+}
+.title-post > a:hover{
+  color: #333 ;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  font-weight: bold;
 }
 .title-post{
   padding-bottom: 15px;
@@ -640,7 +646,7 @@ body {
 .title-post > a:hover{
   color: #47a7eb ;
   text-align: justify;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 20px;
 }
@@ -679,13 +685,11 @@ body {
   padding:40px 20px;
 }
 .form-suport > h2{
-  font-family: 'RobotoCondensed';
   font-size: 24px;
   font-weight: bold;
   padding-bottom: 10px;
 }
 .form-suport > p{
-  font-family: RobotoCondensed,Arial;
   font-size: 15px;
   padding-bottom: 10px;
 }
@@ -702,7 +706,6 @@ footer{
   background-color: #302924;
   padding: 30px 0;
   color: white;
-  font-family: RobotoCondensed;
   font-size: 16px;
   line-height: 20px;
 }
