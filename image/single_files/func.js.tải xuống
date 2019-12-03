@@ -1,0 +1,65 @@
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+    dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+gtag('config', 'UA-138007987-1');
+const BASE_URL = window.location.origin;
+const mobileWidth = window.matchMedia("(max-width: 768px)");
+const S3_URL = 'https://d34zoy7mey8f6f.cloudfront.net';
+const alertToast = (method, mess) => {
+    iziToast[method]({
+        id: method,
+        title: 'Thông báo',
+        message: mess,
+        position: 'topRight',
+        transitionIn: 'fadeInDown',
+
+    });
+};
+const sending = function (currentBtn, text) {
+    if (!text) {
+        text = "Đang gửi";
+    }
+    currentBtn.html(text + ' <i class="fa fa-spinner fa-spin"></i>');
+    currentBtn.prop("disabled", true);
+};
+const sendSuccess = function (currentBtn, text) {
+    currentBtn.html(text);
+    currentBtn.prop("disabled", false);
+};
+
+const alertConfirm = (confirmText, callback) => {
+    iziToast.question({
+        drag: false,
+        close: false,
+        overlay: true,
+        title: 'Này',
+        message: confirmText,
+        position: 'center',
+        buttons: [
+            ['<button><b>Hủy</b></button>', function (instance, toast, button, e) {
+                instance.hide({transitionOut: 'fadeOut'}, toast, 'button');
+            }, false],
+            ['<button><b>Xác nhận</b></button>', function (instance, toast, button, e) {
+                callback();
+                instance.hide({transitionOut: 'fadeOut'}, toast, 'button');
+            }, false],
+        ]
+    });
+}
+
+function formatCurrency(num) {
+    num = num.toString().replace(/\$|\./g, '');
+    if (isNaN(num) || num.length > 18)
+        num = "0";
+    var sign = (num == (num = Math.abs(num)));
+    num = Math.floor(num * 100 + 0.50000000001);
+    num = Math.floor(num / 100).toString();
+    for (var i = 0; i < Math.floor((num.length - (1 + i)) / 3); i++)
+        num = num.substring(0, num.length - (4 * i + 3)) + '.' +
+            num.substring(num.length - (4 * i + 3));
+    return (((sign) ? '' : '-') + num);
+}

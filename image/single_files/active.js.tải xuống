@@ -1,0 +1,133 @@
+(function ($) {
+    'use strict';
+
+    var $window = $(window);
+
+    // :: Nav Active Code
+    if ($.fn.classyNav) {
+        $('#essenceNav').classyNav();
+    }
+
+    // :: ScrollUp Active Code
+    if ($.fn.scrollUp) {
+        $.scrollUp({
+            scrollSpeed: 1000,
+            easingType: 'easeInOutQuart',
+            scrollText: '<i class="fa fa-angle-up" aria-hidden="true"></i>'
+        });
+    }
+
+    // :: Sticky Active Code
+    $window.on('scroll', function () {
+        if ($window.scrollTop() > 0) {
+            $('.header_area').addClass('sticky');
+        } else {
+            $('.header_area').removeClass('sticky');
+        }
+    });
+
+    // :: Tooltip Active Code
+    if ($.fn.tooltip) {
+        $('[data-toggle="tooltip"]').tooltip();
+    }
+
+    // :: PreventDefault a Click
+    $("a[href='#']").on('click', function ($) {
+        $.preventDefault();
+    });
+
+})(jQuery);
+$(document).ready(function () {
+
+    $('input[name="option_payment"]').bind('click', function () {
+        $('.list-content li').removeClass('active');
+        $(this).parent().parent('li').addClass('active');
+    });
+
+
+    iziToast.settings({
+        timeout: 4000,
+        close: true,
+        progressBar: true,
+        progressBarEasing: 'ease',
+    });
+
+    $('.btn-open-sidebar').click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('#sidebar-mobile').toggleClass('active');
+        if($('#sidebar-mobile').hasClass('active')){
+            $('#bg-overlay').fadeIn('fast');
+        }
+        else{
+            $('#bg-overlay').fadeOut('fast');
+        }
+    });
+    $('.btn-hide-sidebar').click(function () {
+        $('#sidebar-mobile').removeClass('active');
+    });
+    $('#bg-overlay').click(function () {
+        $('#sidebar-mobile').removeClass('active');
+        $('.btn-open-sidebar').toggleClass('active');
+        $('#bg-overlay').fadeOut('fast');
+    });
+    $('#bg-overlay-search').click(function () {
+        $('#search-bar-mobile').removeClass('show');
+        $('.btn-search-advance').removeClass('active');
+        $(this).fadeOut('fast');
+        $('.search-mobile').css('z-index',99)
+    });
+    if((location.pathname === "/mua-ban-nha-dat" || location.pathname === "/booking" || location.pathname === "/du-lich") && location.search === ''){
+        let container = document.querySelector('body');
+
+        container.addEventListener("touchstart", startTouch, false);
+        container.addEventListener("touchmove", moveTouch, false);
+
+        // Swipe Up / Down / Left / Right
+        let initialX = null;
+        let initialY = null;
+
+        function startTouch(e) {
+            initialX = e.touches[0].clientX;
+            initialY = e.touches[0].clientY;
+        };
+
+        function moveTouch(e) {
+            if (initialX === null) {
+                return;
+            }
+
+            if (initialY === null) {
+                return;
+            }
+
+            let currentX = e.touches[0].clientX;
+            let currentY = e.touches[0].clientY;
+
+            let diffX = initialX - currentX;
+            let diffY = initialY - currentY;
+
+            if (Math.abs(diffX) > Math.abs(diffY)) {
+                // sliding horizontally
+                if (diffX > 0) {
+                    // swiped left
+                } else {
+                    // swiped right
+                }
+            } else {
+                // sliding vertically
+                if (diffY > 0) {
+                    $('#search-bar-mobile').collapse("hide");
+                    $('.btn-search-advance').removeClass('active');
+                    $('#bg-overlay-search').fadeOut('fast');
+                    $('.search-mobile').css('z-index',99);
+                } else {
+                    // swiped down
+                }
+            }
+            initialX = null;
+            initialY = null;
+            e.preventDefault();
+        }
+    }
+});
