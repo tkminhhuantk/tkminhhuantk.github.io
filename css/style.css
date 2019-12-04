@@ -911,6 +911,7 @@ footer a{
 .comment-review{
   padding-bottom: 10px;
   border-bottom: 1px dashed #c4c4c4;
+  margin-bottom: 10px;
 }
 .content-user-comment span{
   font-size: 16px;
