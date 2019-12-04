@@ -903,7 +903,7 @@ footer a{
 .name-user-comment, .content-user-comment{
   padding:10px 10px;
 }
-.name-user-comment span{
+.name-user-comment{
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
@@ -913,7 +913,7 @@ footer a{
   border-bottom: 1px dashed #c4c4c4;
   margin-bottom: 10px;
 }
-.content-user-comment span{
+.content-user-comment{
   font-size: 16px;
   line-height: 20px;
 }
@@ -970,6 +970,37 @@ footer a{
   color: #47a7eb;
 }
 
+
+.content-category{
+  padding: 20px 20px;
+  padding-bottom: 1em;
+  background-color: #e6e9ed;
+}
+.item-category{
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  background-color: white;
+}
+.item-category .info a h3{
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #c4c4c4;
+}
+.item-category .info a h3:hover{
+  color: #47a7eb;
+}
+.item-category .info span{
+  display: block;
+  margin-bottom: 10px;
+  margin-top:10px;
+}
 
 
   
