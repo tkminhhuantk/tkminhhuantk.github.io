@@ -602,9 +602,9 @@ body {
   margin-bottom: 20px;
 }
 .post-image-large{
-  padding: 30px 30px;
+  /*padding: 30px 30px;
   background-color: white;
-  margin-bottom: 20px;
+  margin-bottom: 20px;*/
 }
 .post-info-large{
   padding:20px 20px;
@@ -976,6 +976,14 @@ footer a{
   padding-bottom: 1em;
   background-color: #e6e9ed;
 }
+.title-category{
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  background-color: white;
+}
 .item-category{
   width: 100%;
   padding: 20px;
@@ -1000,6 +1008,22 @@ footer a{
   display: block;
   margin-bottom: 10px;
   margin-top:10px;
+}
+.item-category .info p{
+  text-align: justify;
+}
+.form-suport button{
+  background-color: #47a7eb;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.post-large{
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 30px 30px;
+  background-color: white;
+  margin-bottom: 20px;
 }
 
 
