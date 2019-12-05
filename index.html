@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="vi-VN">
-	<head>
-		<title>Home - Blog</title>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="icon" type="image/x-icon" href=""><!-- Favicon -->
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/all.min.css">
-		<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-		<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
-		<link rel="stylesheet" type="text/css" href="css/slick.css">
-		<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-		<link rel="stylesheet" type="text/css" href="css/lightbox.css">
-		<link rel="stylesheet" type="text/css" href="css/animate.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<header class="section-header header-page" id="js_sticky">
-			<div class="container">
-				<div class="nav-main">
-					<div class="nav-left">
-						<a href="index.html" class="none__sticky">
-							<img src="image/Logo.png" title="TECHRUM" alt="TECHRUM">
-						</a>
-					</div>
-					<div class="nav-right">
-						<div class="nav-top">
+<head>
+    <title>Home - Blog</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href=""><!-- Favicon -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="section-header header-page" id="js_sticky">
+    <div class="container">
+        <div class="nav-main">
+            <div class="nav-left">
+                <a href="index.html" class="none__sticky">
+                    <img src="image/Logo.png" title="TECHRUM" alt="TECHRUM">
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="nav-top">
 							<span class="hotline">
 								<i class="fas fa-phone"></i>
 								<span class="txt-phone">
@@ -37,8 +37,8 @@
 									-
 									<a href="0835775666">08.577.5666</a>
 								</span>
-							</span> | 
-							<span class="social">
+							</span> |
+                    <span class="social">
 								<a href="https://facebook.com">
 									<i class="fab fa-facebook-f"></i>
 								</a>
@@ -48,368 +48,778 @@
 								<a href="https://youtube.com">
 									<i class="fab fa-youtube"></i>
 								</a>
-							</span> | 
-							<span class="login">
+							</span> |
+                    <span class="login">
 								<i class="fas fa-user-alt"></i>
 								<span class="txt-login">
 									<a href="tel:0775775666">Đăng nhập</a>
 								</span>
 							</span>
-							
-							<!-- End Form Search -->
-						</div>
-						<div class="nav-bottom">
-							<ul class="nav__menu">
-								<li class="active"><a href="#">Trang chủ</a></li>
-								<li><a href="#">Tin tức</a></li>
-								<li><a href="#">Bất động sản</a></li>
-								<li><a href="#">Sự kiên</a></li>
-								<li><a href="#">Giải trí</a></li>
-								<li><a href="#">Giáo dục</a></li>
-								<li><a href="#">Liên hệ</a></li>
-								<li>
-									<a href="javascript:" class="show-search"><i class="fas fa-search"></i></a>
-								</li>
-							</ul>
-						</div>
 
-					</div>
-				</div>
-			</div>
-		</header>
+                    <!-- End Form Search -->
+                </div>
+                <div class="nav-bottom">
+                    <ul class="nav__menu">
+                        <li class="active"><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Bất động sản</a></li>
+                        <li><a href="#">Sự kiên</a></li>
+                        <li><a href="#">Giải trí</a></li>
+                        <li><a href="#">Giáo dục</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li>
+                            <a href="javascript:void(0);" data-toggle="search_mobile" class="js_search_mobile">
+                                <span class="fas fa-search"></span>
+                            </a>
+                            <div class="search__form d-none" id="search__form">
+                                <form>
+                                    <div class="form-control">
+                                        <input type="text" name="s" placeholder="Tìm kiếm"
+                                               value="">
+                                    </div>
+                                    <div class="form-control">
+                                        <input type="checkbox">
+                                        <label>Chỉ tìm trong tiêu đề</label>
+                                    </div>
+                                    <div class="form-control">
+                                        <label>Bởi: </label>
+                                        <input type="text" placeholder="Thành viên">
+                                    </div>
+                                    <div class="form-control">
+                                        <button class="btn btn-default" type="submit"><span class="fas fa-search"></span>Tìm
+                                        </button>
+                                        <a href="#" class="btn btn-default">Tìm nâng cao...</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
-		<div class="section-banner">
-			<section class="banner">
-				<div class="owl-carousel">
-					<div class="slider-item" style="background-image: url('image/hero_1.jpg');">
-						<div class="container">
-							<div class="row slider-text align-items-center justify-content-center">
-								<div class="col-md-8 text-center col-sm-12 element-animate fadeInUp element-animated">
-									<h1>Tâm sáng tầm vươn xa</h1>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slider-item" style="background-image: url('image/hero_2.jpg');">
-						<div class="container">
-							<div class="row slider-text align-items-center justify-content-center">
-								<div class="col-md-8 text-center col-sm-12 element-animate fadeInUp element-animated">
-									<h1>Tâm sáng tầm vươn xa</h1>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slider-item" style="background-image: url('image/hero_3.jpg');">
-						<div class="container">
-							<div class="row slider-text align-items-center justify-content-center">
-								<div class="col-md-8 text-center col-sm-12 element-animate fadeInUp element-animated">
-									<h1>Tâm sáng tầm vươn xa</h1>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
+            </div>
+            <a href="javascript:void(0)" id="nav__toggle" class="nav__bar">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </div>
+</header>
 
-		<section class="sec-new">
-			<div class="container">
-				<div class="row">
-					<div class="new-title">
-						<h3>Tin Tức</h3>
-						<div>
-							<img src="image/line-title.png" alt="Line title">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-12 post-large">
-						<div class="row">
-							<div class="col-sm-12 col-md-8">
-								<div class="post-image-large">
-									<div class="img-post">
-										<a href="#">
-											<img src="image/baiviet/baiviet01.jpg" class="img-post" alt="Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-4 info-large">
-								<div class="post-info-large">
-									<div class="title-post">
-										<a href="#"><h3>Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm</h3></a>
-									</div>
-									<div class="except-post">
-										<p>Nếu như phong cách cổ điển thường chỉ tập trung vào 1 vài gam màu trung tính như be, trắng, phong cách công nghiệp lại lột tả vẻ đẹp tự nhiên nhất của chất liệu thô, phong cách châu Á lại ưa thích những màu sắc ấm như phong cách cổ điển thường chỉ tập trung vào 1 vài gam màu trung tính như be, trắng, phong cách công nghiệp lại lột tả vẻ đẹp tự nhiên nhất của chất liệu thô, phong cách châu Á lại ưa thích những màu sắc ấm</p>
-									</div>
-									<div class="review-post">
-										<div class="date-post">
-											<span>Ngày: 03/12/2019 - <i class="fas fa-user-alt"></i> Admin</span>
-										</div>
-										<div class="review-post-btn">
-											<a href="#"><span class="btn">Xem thêm</span></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-4">
-						<div class="post_item">
-							<div class="img-post">
-								<a href="#" class="item__img">
-									<img src="image/baiviet/baiviet01.jpg" class="img-post" alt="Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm">
-								</a>
-							</div>
-							<div class="title-post">
-								<a href="#">Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm</a>
-							</div>
-							<div class="except-post">
-								<p>Nếu như phong cách cổ điển thường chỉ tập trung vào 1 vài gam màu trung tính như be, trắng, phong cách công nghiệp lại lột tả vẻ đẹp tự nhiên nhất của chất liệu thô, phong cách châu Á lại ưa thích những màu sắc ấm...</p>
-							</div>
-							<div class="review-post">
-								<div class="date-post">
-									<span>Ngày: 03/12/2019 - <i class="fas fa-user-alt"></i> Admin</span>
-								</div>
-								<div class="review-post-btn">
-									<a href="#"><span class="btn">Xem thêm</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-4">
-						<div class="post_item">
-							<div class="img-post">
-								<a href="#">
-									<img src="image/baiviet/baiviet02.jpg" class="img-post" alt="Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm">
-								</a>
-							</div>
-							<div class="title-post">
-								<a href="#">Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm</a>
-							</div>
-							<div class="except-post">
-								<p>Nếu như phong cách cổ điển thường chỉ tập trung vào 1 vài gam màu trung tính như be, trắng, phong cách công nghiệp lại lột tả vẻ đẹp tự nhiên nhất của chất liệu thô, phong cách châu Á lại ưa thích những màu sắc ấm...</p>
-							</div>
-							<div class="review-post">
-								<div class="date-post">
-									<span>Ngày: 03/12/2019 - <i class="fas fa-user-alt"></i> Admin</span>
-								</div>
-								<div class="review-post-btn">
-									<a href="#"><span class="btn">Xem thêm</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-4">
-						<div class="post_item">
-							<div class="img-post">
-								<a href="#">
-									<img src="image/baiviet/baiviet03.jpg" class="img-post" alt="Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm">
-								</a>
-							</div>
-							<div class="title-post">
-								<a href="#">Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm</a>
-							</div>
-							<div class="except-post">
-								<p>Nếu như phong cách cổ điển thường chỉ tập trung vào 1 vài gam màu trung tính như be, trắng, phong cách công nghiệp lại lột tả vẻ đẹp tự nhiên nhất của chất liệu thô, phong cách châu Á lại ưa thích những màu sắc ấm...</p>
-							</div>
-							<div class="review-post">
-								<div class="date-post">
-									<span>Ngày: 03/12/2019 - <i class="fas fa-user-alt"></i> Admin</span>
-								</div>
-								<div class="review-post-btn">
-									<a href="#"><span class="btn">Xem thêm</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</section>
+<div class="section-banner">
+    <section class="banner">
+        <div class="owl-carousel">
+            <div class="slider-item" style="background-image: url('image/hero_1.jpg');">
+                <div class="container">
+                    <div class="row slider-text align-items-center justify-content-center">
+                        <div class="col-md-8 text-center col-sm-12 element-animate fadeInUp element-animated">
+                            <h1>Tâm sáng tầm vươn xa</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item" style="background-image: url('image/hero_2.jpg');">
+                <div class="container">
+                    <div class="row slider-text align-items-center justify-content-center">
+                        <div class="col-md-8 text-center col-sm-12 element-animate fadeInUp element-animated">
+                            <h1>Tâm sáng tầm vươn xa</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item" style="background-image: url('image/hero_3.jpg');">
+                <div class="container">
+                    <div class="row slider-text align-items-center justify-content-center">
+                        <div class="col-md-8 text-center col-sm-12 element-animate fadeInUp element-animated">
+                            <h1>Tâm sáng tầm vươn xa</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
-		<section class="sec-new">
-			<div class="container">
-				<div class="row">
-					<div class="new-title">
-						<h3>Bất động sản</h3>
-						<div>
-							<img src="image/line-title.png" alt="Line Title">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-12 post-large">
-						<div class="row">
-							<div class="col-sm-12 col-md-8">
-								<div class="post-image-large">
-									<div class="img-post">
-										<a href="#">
-											<img src="image/baiviet/baiviet01.jpg" class="img-post" alt="Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-4 info-large">
-								<div class="post-info-large">
-									<div class="title-post">
-										<a href="#"><h3>Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm</h3></a>
-									</div>
-									<div class="except-post">
-										<p>Nếu như phong cách cổ điển thường chỉ tập trung vào 1 vài gam màu trung tính như be, trắng, phong cách công nghiệp lại lột tả vẻ đẹp tự nhiên nhất của chất liệu thô, phong cách châu Á lại ưa thích những màu sắc ấm như phong cách cổ điển thường chỉ tập trung vào 1 vài gam màu trung tính như be, trắng, phong cách công nghiệp lại lột tả vẻ đẹp tự nhiên nhất của chất liệu thô, phong cách châu Á lại ưa thích những màu sắc ấm</p>
-									</div>
-									<div class="review-post">
-										<div class="date-post">
-											<span>Ngày: 03/12/2019 - <i class="fas fa-user-alt"></i> Admin</span>
-										</div>
-										<div class="review-post-btn">
-											<a href="#"><span class="btn">Xem thêm</span></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-4">
-						<div class="post_item">
-							<div class="img-post">
-								<a href="#">
-									<img src="image/baiviet/baiviet01.jpg" class="img-post" alt="Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm">
-								</a>
-							</div>
-							<div class="title-post">
-								<a href="#">Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm</a>
-							</div>
-							<div class="except-post">
-								<p>Nếu như phong cách cổ điển thường chỉ tập trung vào 1 vài gam màu trung tính như be, trắng, phong cách công nghiệp lại lột tả vẻ đẹp tự nhiên nhất của chất liệu thô, phong cách châu Á lại ưa thích những màu sắc ấm...</p>
-							</div>
-							<div class="review-post">
-								<div class="date-post">
-									<span>Ngày: 03/12/2019 - <i class="fas fa-user-alt"></i> Admin</span>
-								</div>
-								<div class="review-post-btn">
-									<a href="#"><span class="btn">Xem thêm</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-4 ">
-						<div class="post_item">
-							<div class="img-post">
-								<a href="#">
-									<img src="image/baiviet/baiviet02.jpg" class="img-post" alt="Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm">
-								</a>
-							</div>
-							<div class="title-post">
-								<a href="#">Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm</a>
-							</div>
-							<div class="except-post">
-								<p>Nếu như phong cách cổ điển thường chỉ tập trung vào 1 vài gam màu trung tính như be, trắng, phong cách công nghiệp lại lột tả vẻ đẹp tự nhiên nhất của chất liệu thô, phong cách châu Á lại ưa thích những màu sắc ấm...</p>
-							</div>
-							<div class="review-post">
-								<div class="date-post">
-									<span>Ngày: 03/12/2019 - <i class="fas fa-user-alt"></i> Admin</span>
-								</div>
-								<div class="review-post-btn">
-									<a href="#"><span class="btn">Xem thêm</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-4">
-						<div class="post_item">
-							<div class="img-post">
-								<a href="#">
-									<img src="image/baiviet/baiviet03.jpg" class="img-post" alt="Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm">
-								</a>
-							</div>
-							<div class="title-post">
-								<a href="#">Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm</a>
-							</div>
-							<div class="except-post">
-								<p>Nếu như phong cách cổ điển thường chỉ tập trung vào 1 vài gam màu trung tính như be, trắng, phong cách công nghiệp lại lột tả vẻ đẹp tự nhiên nhất của chất liệu thô, phong cách châu Á lại ưa thích những màu sắc ấm...</p>
-							</div>
-							<div class="review-post">
-								<div class="date-post">
-									<span>Ngày: 03/12/2019 - <i class="fas fa-user-alt"></i> Admin</span>
-								</div>
-								<div class="review-post-btn">
-									<a href="#"><span class="btn">Xem thêm</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</section>
+<section class="sec-new">
+    <div class="container bg-white">
+        <div class="row">
+            <div class="new-title">
+                <h3>Bắt động sản</h3>
+                <div>
+                    <img src="image/line-title.png" alt="Line title">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-7 post-large">
+                <div class="post-image-large">
+                    <div class="img-post">
+                        <a href="#">
+                            <img src="image/baiviet/baiviet01.jpg" class="img-post"
+                                 alt="Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm">
+                        </a>
+                        <div class="date-post">
+                            <span>Ngày: 03/12/2019 - <i class="fas fa-user-alt"></i> Admin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-info-large">
+                    <div class="title-post">
+                        <a href="#"><h3>Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm</h3></a>
+                    </div>
+                    <div class="except-post">
+                        <p>Nếu như phong cách cổ điển thường chỉ tập trung vào 1 vài gam màu trung tính như be, trắng,
+                            phong cách công nghiệp lại lột tả vẻ đẹp tự nhiên nhất của chất liệu thô, phong cách châu Á
+                            lại ưa thích những màu sắc ấm như phong cách cổ điển thường chỉ tập trung vào 1 vài gam màu
+                            trung tính như be, trắng, phong cách công nghiệp lại lột tả vẻ đẹp tự nhiên nhất của chất
+                            liệu thô, phong cách châu Á lại ưa thích những màu sắc ấm</p>
+                    </div>
+                    <div class="review-post">
+                        <div class="review-post-btn">
+                            <a href="#"><span class="btn">Xem thêm</span><i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-4 col-md-5 ">
+                <div class="lasted-news--right">
+                    <ul>
+                        <li>
+                            <a href="single.html">
+                                <img src="image/baiviet/baiviet01.jpg">
+                            </a>
+                            <a href="single.html">
+                                Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm
+                            </a>
+                        </li>
+                        <li>
+                            <a href="single.html">
+                                <img src="image/baiviet/baiviet01.jpg">
+                            </a>
+                            <a href="single.html">
+                                Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm
+                            </a>
+                        </li>
+                        <li>
+                            <a href="single.html">
+                                <img src="image/baiviet/baiviet01.jpg">
+                            </a>
+                            <a href="single.html">
+                                Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm
+                            </a>
+                        </li>
+                        <li>
+                            <a href="single.html">
+                                <img src="image/baiviet/baiviet01.jpg">
+                            </a>
+                            <a href="single.html">
+                                Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm
+                            </a>
+                        </li>
+                        <li>
+                            <a href="single.html">
+                                <img src="image/baiviet/baiviet01.jpg">
+                            </a>
+                            <a href="single.html">
+                                Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="post_item">
+                    <div class="img-post">
+                        <a href="#" class="item__img">
+                            <img src="image/baiviet/baiviet01.jpg" class="img-post"
+                                 alt="Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm">
+                        </a>
 
-		<section class="sec-form-register">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 col-sm-12 info-suport">
-						<img src="image/24h.png" alt="24h">
-						<h3>HOTLINE HỖ TRỢ</h3>
-						<p>0912 817 117</p>
-						<p>Email: suport@gmail.com</p>
-					</div>
-					<div class="col-md-6 col-sm-12 form-suport">
-						<h2>ĐĂNG KÝ NHẬN THÔNG TIN KHUYẾN MÃI</h2>
-						<p>Nhập thông tin vào form để chúng tôi gữi cho bạn khuyến mãi mới nhất</p>
-						<form>
-							<input type="text" placeholder="Nhập tên của bạn" class="form-control">
-							<input type="text" placeholder="Nhập email" class="form-control">
-							<input type="text" placeholder="Nhập số điện thoại" class="form-control">
-							<textarea placeholder="Nội dung" rows="2" class="form-control"></textarea>
-							<button class="form-control">Đăng ký</button>
-						</form>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</section>
+                        <div class="date-post">
+                            <span>Ngày: 03/12/2019 - <i class="fas fa-user-alt"></i> Admin</span>
+                        </div>
+                    </div>
+                    <div class="content-post">
+                        <div class="title-post">
+                            <a href="#">Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm</a>
+                        </div>
+                        <div class="except-post">
+                            <p>Nếu như phong cách cổ điển thường chỉ tập trung vào 1 vài gam màu trung tính như be,
+                                trắng, phong cách công nghiệp lại lột tả vẻ đẹp tự nhiên nhất của chất liệu thô, phong
+                                cách châu Á lại ưa thích những màu sắc ấm...</p>
+                        </div>
+                        <div class="review-post">
+                            <div class="review-post-btn">
+                                <a href="#"><span class="btn">Xem thêm</span><i
+                                        class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="post_item">
+                    <div class="img-post">
+                        <a href="#">
+                            <img src="image/baiviet/baiviet02.jpg" class="img-post"
+                                 alt="Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm">
+                        </a>
 
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-sm-12">
-						<h3>THÔNG TIN HỖ TRỢ</h3>
-						<a href="#"><img src="image/Logo.png" alt="TECHRUM"></a>
-						<p>Địa chỉ: 162 Phạm Ngũ Lão, An Hòa, Ninh Kiều, Tp. Cần Thơ</p>
-						<p> Điện thoại: 077.577.5666</p>
-						<p>Email: suport@gmail.com</p>
-					</div>
-					<div class="col-md-4 col-sm-12">
-						<h3>DANH SÁCH CHUYÊN MỤC</h3>
-						<ul>
-							<li><a href="#">Tin tức</a></li>
-							<li><a href="#">Bất động sản</a></li>
-							<li><a href="#">Sự kiện</a></li>
-							<li><a href="#">Giải trí</a></li>
-							<li><a href="#">Giáo dục</a></li>
-						</ul>
-					</div>
-					<div class="col-md-4 col-sm-12">
-						<h3>LIÊN KẾT FACEBOOK</h3>
+                        <div class="date-post">
+                            <span>Ngày: 03/12/2019 - <i class="fas fa-user-alt"></i> Admin</span>
+                        </div>
+                    </div>
+                    <div class="content-post">
+                        <div class="title-post">
+                            <a href="#">Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm</a>
+                        </div>
+                        <div class="except-post">
+                            <p>Nếu như phong cách cổ điển thường chỉ tập trung vào 1 vài gam màu trung tính như be,
+                                trắng, phong cách công nghiệp lại lột tả vẻ đẹp tự nhiên nhất của chất liệu thô, phong
+                                cách châu Á lại ưa thích những màu sắc ấm...</p>
+                        </div>
+                        <div class="review-post">
+                            <div class="review-post-btn">
+                                <a href="#"><span class="btn">Xem thêm</span><i
+                                        class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="post_item">
+                    <div class="img-post">
+                        <a href="#">
+                            <img src="image/baiviet/baiviet03.jpg" class="img-post"
+                                 alt="Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm">
+                        </a>
 
-					</div>
-				</div>
-			</div>
-		</footer>
+                        <div class="date-post">
+                            <span>Ngày: 03/12/2019 - <i class="fas fa-user-alt"></i> Admin</span>
+                        </div>
+                    </div>
+                    <div class="content-post">
+                        <div class="title-post">
+                            <a href="#">Cách trang trí phòng khách đẹp mắt và có giá tiết kiệm</a>
+                        </div>
+                        <div class="except-post">
+                            <p>Nếu như phong cách cổ điển thường chỉ tập trung vào 1 vài gam màu trung tính như be,
+                                trắng, phong cách công nghiệp lại lột tả vẻ đẹp tự nhiên nhất của chất liệu thô, phong
+                                cách châu Á lại ưa thích những màu sắc ấm...</p>
+                        </div>
+                        <div class="review-post">
+                            <div class="review-post-btn">
+                                <a href="#"><span class="btn">Xem thêm</span><i
+                                        class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/slick.min.js"></script>
-		<script src="js/lightbox.js"></script>
-		<script src="js/wow.min.js"></script>
-		<script src="js/app.js"></script>
-	</body>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</section>
+
+<section class="main main-blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main-title">
+                    <h3>BÀI VIẾT MỚI NHẤT</h3>
+                    <span class="line-title"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="main--blog">
+                    <ul>
+                        <li>
+                            <div class="blog-avatar">
+                                <a href="single.html">
+                                    <img src="image/baiviet/bao_tang.jpg">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <a href="single.html">
+                                    Kho báu 1 tỷ euro bị đánh cắp ở bảo tàng ở Đức
+                                </a>
+                                <p>
+                                    Kẻ trộm đã lấy đồ trang sức và các kho báu khác trị giá tới 1 tỷ euro từ một bảo
+                                    tàng ở miền Đông nước Đức vào sáng 25/11.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="blog-avatar">
+                                <a href="single.html">
+                                    <img src="image/baiviet/bao_tang_8_thumb.jpg">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <a href="single.html">
+                                    Kho báu vô giá ở Hầm Xanh trong vụ trộm chấn động châu Âu
+                                </a>
+                                <p>
+                                    Green Vault, nơi vừa bị trộm đột nhập đánh cắp số báu vật có giá trị lên tới 1 tỷ
+                                    euro, là một trong những kho báu nghệ thuật lớn nhất châu Âu tại thành phố Dresden
+                                    của Đức.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="blog-avatar">
+                                <a href="single.html">
+                                    <img src="image/baiviet/bao_tang.jpg">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <a href="single.html">
+                                    Kho báu 1 tỷ euro bị đánh cắp ở bảo tàng ở Đức
+                                </a>
+                                <p>
+                                    Kẻ trộm đã lấy đồ trang sức và các kho báu khác trị giá tới 1 tỷ euro từ một bảo
+                                    tàng ở miền Đông nước Đức vào sáng 25/11.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="blog-avatar">
+                                <a href="single.html">
+                                    <img src="image/baiviet/bao_tang_8_thumb.jpg">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <a href="single.html">
+                                    Kho báu vô giá ở Hầm Xanh trong vụ trộm chấn động châu Âu
+                                </a>
+                                <p>
+                                    Green Vault, nơi vừa bị trộm đột nhập đánh cắp số báu vật có giá trị lên tới 1 tỷ
+                                    euro, là một trong những kho báu nghệ thuật lớn nhất châu Âu tại thành phố Dresden
+                                    của Đức.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="main--blog">
+                    <ul>
+                        <li>
+                            <div class="blog-avatar">
+                                <a href="single.html">
+                                    <img src="image/baiviet/bao_tang.jpg">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <a href="single.html">
+                                    Kho báu 1 tỷ euro bị đánh cắp ở bảo tàng ở Đức
+                                </a>
+                                <p>
+                                    Kẻ trộm đã lấy đồ trang sức và các kho báu khác trị giá tới 1 tỷ euro từ một bảo
+                                    tàng ở miền Đông nước Đức vào sáng 25/11.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="blog-avatar">
+                                <a href="single.html">
+                                    <img src="image/baiviet/bao_tang_8_thumb.jpg">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <a href="single.html">
+                                    Kho báu vô giá ở Hầm Xanh trong vụ trộm chấn động châu Âu
+                                </a>
+                                <p>
+                                    Green Vault, nơi vừa bị trộm đột nhập đánh cắp số báu vật có giá trị lên tới 1 tỷ
+                                    euro, là một trong những kho báu nghệ thuật lớn nhất châu Âu tại thành phố Dresden
+                                    của Đức.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="blog-avatar">
+                                <a href="single.html">
+                                    <img src="image/baiviet/bao_tang.jpg">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <a href="single.html">
+                                    Kho báu 1 tỷ euro bị đánh cắp ở bảo tàng ở Đức Kho báu 1 tỷ euro bị đánh cắp ở bảo
+                                    tàng ở ĐứcKho báu 1 tỷ euro bị đánh cắp ở bảo tàng ở Đức
+                                </a>
+                                <p>
+                                    Kẻ trộm đã lấy đồ trang sức và các kho báu khác trị giá tới 1 tỷ euro từ một bảo
+                                    tàng ở miền Đông nước Đức vào sáng 25/11.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="blog-avatar">
+                                <a href="single.html">
+                                    <img src="image/baiviet/bao_tang_8_thumb.jpg">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <a href="single.html">
+                                    Kho báu vô giá ở Hầm Xanh trong vụ trộm chấn động châu Âu
+                                </a>
+                                <p>
+                                    Green Vault, nơi vừa bị trộm đột nhập đánh cắp số báu vật có giá trị lên tới 1 tỷ
+                                    euro, là một trong những kho báu nghệ thuật lớn nhất châu Âu tại thành phố Dresden
+                                    của Đức.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main main-review">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main-title">
+                    <h3>ĐÁNH GIÁ CỦA KHÁCH HÀNG</h3>
+                    <span class="line-title"></span>
+                </div>
+            </div>
+            <div class="col-lg-8 offset-lg-2">
+                <div class="review--main owl-carousel owl-theme">
+                    <div class="review-item">
+                        <div class="review-desc">
+                            <span class="left-line"></span>
+                            <span class="right-line"></span>
+                            Là tập đoàn lớn về thức ăn gia súc và thủy sản trên thế giới, Newhope rất chú trọng về mặt
+                            hình ảnh, chúng tôi quyết định chọn vietcore là đơn vị đồng hành tại khu vực miền nam Việt
+                            Nam.
+                        </div>
+                        <div class="review-author">
+                            Ms. Trần Trân
+                            <span>CV - Tập đoàn Newhope</span>
+                        </div>
+                        <div class="review-logo">
+                            <img src="image/avatar/hinhavatar-200x200.jpg">
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-desc">
+                            <span class="left-line"></span>
+                            <span class="right-line"></span>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galle.
+                        </div>
+                        <div class="review-author">
+                            Ms. Trần Trân 2
+                            <span>CV - Tập đoàn Newhope</span>
+                        </div>
+                        <div class="review-logo">
+                            <img src="image/avatar/hinhavatar-200x200.jpg">
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-desc">
+                            <span class="left-line"></span>
+                            <span class="right-line"></span>
+                            Là tập đoàn lớn về thức ăn gia súc và thủy sản trên thế giới, Newhope rất chú trọng về mặt
+                            hình ảnh, chúng tôi quyết định chọn vietcore là đơn vị đồng hành tại khu vực miền nam Việt
+                            Nam.
+                        </div>
+                        <div class="review-author">
+                            Ms. Trần Trân 3
+                            <span>CV - Tập đoàn Newhope</span>
+                        </div>
+                        <div class="review-logo">
+                            <img src="image/avatar/hinhavatar-200x200.jpg">
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-desc">
+                            <span class="left-line"></span>
+                            <span class="right-line"></span>
+                            Là tập đoàn lớn về thức ăn gia súc và thủy sản trên thế giới, Newhope rất chú trọng về mặt
+                            hình ảnh, chúng tôi quyết định chọn vietcore là đơn vị đồng hành tại khu vực miền nam Việt
+                            Nam.
+                        </div>
+                        <div class="review-author">
+                            Ms. Trần Trân 4
+                            <span>CV - Tập đoàn Newhope</span>
+                        </div>
+                        <div class="review-logo">
+                            <img src="image/avatar/hinhavatar-200x200.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main main-partner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main-title">
+                    <h3>Đối tác của chúng tôi</h3>
+                    <span class="line-title"></span>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <ul class="d-flex align-items-center justify-content-center justify-content-md-between">
+                    <li>
+                        <div class="partner-item"><img src="assets/images/partner/newhope.jpg"></div>
+                    </li>
+                    <li>
+                        <div class="partner-item"><img src="assets/images/partner/8_mitsubishi.jpg"></div>
+                    </li>
+                    <li>
+                        <div class="partner-item"><img src="assets/images/partner/cafatex.jpg"></div>
+                    </li>
+                    <li>
+                        <div class="partner-item"><img src="assets/images/partner/chanhung.jpg"></div>
+                    </li>
+                    <li>
+                        <div class="partner-item"><img src="assets/images/partner/hyundai-taydo.jpg"></div>
+                    </li>
+                    <li>
+                        <div class="partner-item"><img src="assets/images/partner/nhuacantho.jpg"></div>
+                    </li>
+                    <li>
+                        <div class="partner-item"><img src="assets/images/partner/sadico.jpg"></div>
+                    </li>
+                    <li>
+                        <div class="partner-item"><img src="assets/images/partner/suzuki-taydo.jpg"></div>
+                    </li>
+                    <li>
+                        <div class="partner-item"><img src="assets/images/partner/nhuamientay.jpg"></div>
+                    </li>
+                    <li>
+                        <div class="partner-item"><img src="assets/images/partner/Kangaroo-cantho.jpg"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sec-form-register">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 info-suport">
+                <img src="image/24h.png" alt="24h">
+                <h3>HOTLINE HỖ TRỢ</h3>
+                <p>0912 817 117</p>
+                <p>Email: suport@gmail.com</p>
+            </div>
+            <div class="col-md-6 col-sm-12 form-suport">
+                <h2>ĐĂNG KÝ NHẬN THÔNG TIN KHUYẾN MÃI</h2>
+                <p>Nhập thông tin vào form để chúng tôi gữi cho bạn khuyến mãi mới nhất</p>
+                <form>
+                    <input type="text" placeholder="Nhập tên của bạn" class="form-control">
+                    <input type="text" placeholder="Nhập email" class="form-control">
+                    <input type="text" placeholder="Nhập số điện thoại" class="form-control">
+                    <textarea placeholder="Nội dung" rows="2" class="form-control"></textarea>
+                    <button class="form-control">Đăng ký</button>
+                </form>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+
+<footer class="main main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="footer-logo"><a href="#"><img src="image/Logo.png" alt="TECHRUM"></a></div>
+            </div>
+            <div class="col-lg-12">
+                <div class="line-border">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="footer-info">
+                                <h5>Thông tin liên hệ</h5>
+                                <ul>
+                                    <li>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and scrambled it to
+                                            make a type specimen book.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Nên nhúng link google map"><i
+                                                class="fas fa-map-marker-alt"></i>Địa chỉ: 162 Phạm Ngũ Lão, An Hòa,
+                                            Ninh Kiều,
+                                            Tp. Cần Thơ</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:077.577.5666"><i class="fas fa-mobile"></i>SĐT: 077.577.5666</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:077.577.5666"><i class="fas fa-headphones-alt"></i>Hotline:
+                                            077.577.5666</a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:suport@gmail.com"><i class="fas fa-envelope"></i>Email:
+                                            suport@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-info footer-category">
+                                <h5>Danh mục</h5>
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fas fa-angle-double-right"></i>Tin tức</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-angle-double-right"></i>Bất động sản</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-angle-double-right"></i>Sự kiện</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-angle-double-right"></i>Giải trí</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-angle-double-right"></i>Giáo dục</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-angle-double-right"></i>Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-info footer-newsletter">
+                                <h5>Đăng ký nhận tin</h5>
+                                <form>
+                                    <div class="form-group form-footer">
+                                        <input type="email" class="form-control" name="mail"
+                                               placeholder="Example@gamil.com">
+                                        <input name="" class="btn-go" value="Gửi" type="submit">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="footer-info footer-social">
+                                <h5>Theo dõi chúng tôi</h5>
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-google"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="nav_mobile">
+    <div class="js_nav">
+        <div class="js__mobile">
+            <a href="index.html" class="js__logo">
+                <img src="image/logo.png" title="BMV" alt="BMV">
+            </a>
+            <ul>
+                <li class="active">
+                    <a href="index.html">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="gioi-thieu.html">Giới thiệu</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="javascript:void(0)">Lĩnh vực kinh doanh</a>
+                    <ul>
+                        <li>
+                            <a href="linh-vuc-kinh-doanh.html">Đầu tư kinh doanh bất động sản</a>
+                        </li>
+                        <li>
+                            <a href="linh-vuc-kinh-doanh.html">Đầu tư khu công nghiệp</a>
+                        </li>
+                        <li>
+                            <a href="linh-vuc-kinh-doanh.html">Đầu tư thủy điện</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="javascript:void(0)">Tin tức</a>
+                    <ul>
+                        <li>
+                            <a href="tin-tuc.html">Tin tập đoàn Videc</a>
+                        </li>
+                        <li>
+                            <a href="tin-tuc.html">Tin tức sự kiện</a>
+                        </li>
+                        <li>
+                            <a href="tin-tuc.html">Báo chí viết về Videc</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="javascript:void(0)">Dự án</a>
+                    <ul>
+                        <li>
+                            <a href="du-an.html">Dự án đầu tư BĐS</a>
+                        </li>
+                        <li>
+                            <a href="du-an.html">Dự án khu công nghiệp</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="javascript:void(0)">Dự án thủy điện</a>
+                            <ul>
+                                <li><a href="linh-vuc-kinh-doanh.html">Đầu tư thủy điện 2222</a></li>
+                                <li><a href="linh-vuc-kinh-doanh.html">Đầu tư thủy điện 2222</a></li>
+                                <li><a href="linh-vuc-kinh-doanh.html">Đầu tư thủy điện 2222</a></li>
+                                <li><a href="javascript:void(0)">Đầu tư thủy điện 222aaaaaa aaaaaaaaa2 aaaaaaa</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="tuyen-dung.html">Tuyển dụng</a>
+                </li>
+                <li>
+                    <a href="lien-he.html">Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="js__search">
+            <form>
+                <input type="text" name="s" placeholder="Tìm kiếm">
+                <button type="submit" class="btn btn-search"><span class="fas fa-search"></span></button>
+            </form>
+        </div>
+    </div>
+    <div class="js_overlay"></div>
+</div>
+
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/app.js"></script>
+</body>
 </html>
